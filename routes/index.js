@@ -14,14 +14,14 @@ router.get('/home', function(req, res, next) {
 });
 /* GET About us page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About', heading: '',
+  res.render('about', { title: 'About', heading: '',
    para: 'My name is Sheraaz Khan and I have studied physio and Massage Therapy. I am a person who enjoys physical activities. I was born in the Caribbean but grew up in Canada.I have tried my best to take advantage of the seasons in Canada. I enjoy Snowboarding in winter and Hiking in the summer.'
 });
 });
 
 /* GET Products page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects', heading: 'Some of my projects',
+  res.render('projects', { title: 'Projects', heading: 'Some of my projects',
    para: '' });
 });
 
