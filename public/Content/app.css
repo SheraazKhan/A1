@@ -1,17 +1,33 @@
 /* custom css goes here */
-.container {
-    background-color: blanchedalmond;
-}
-h1 {
-    text-align: center;
-    color: brown;
+
+.navbar  {
+  background-color: #537895 ;
 
 }
+body {
+	background: linear-gradient(-45deg, #accbee, #e7f0fd, #667eea );
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
 
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* home or landing page css */
 .card {
   box-shadow: 1px 4px 8px 1px black; 
-  max-width: 275px;
- 
+  max-width: 285px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -110,40 +126,41 @@ h1 {
   }
 }
 
-/* project section */
-.section .work .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem;
-}
- .section .work .box-container {
-  flex: 1 1 30rem;
-  border-radius: 15px;
-  box-shadow: 0 0.7rem 1rem rgba(126, 125, 125, 0.3);
-  position: relative;
-  overflow: scroll;
-  height: 50rem;
-  background: linear-gradient(to right, #bd7914, #e7f0fd);
-  border: none;
-}
-.work .box-container .box img {
+/* project section*/
+.wrapper {
+  padding-top: 2rem;
+  width: 1100px;
+  height: 400px;
+  margin: 0 auto;
   
-  width: 20%;
-  object-fit: cover;
-  margin-left: 20px;
-  margin-top: 20px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+padding: 2px;}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.work .box-container .box .content {
-  height: 90%;
-  width: 10%;
-  position: relative;
-  top: 95%;
-  left: 5%;
-  background: rgba(105, 6, 6, 0.9);
-  display: flex;
-  flex-direction: column;
+.bottom-left {font-style: bold; color: #033944; font-family: Times New Roman;}
+
+.btn {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+ 
+  .column {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    min-height: 60vh;
+    min-width: 30vh;
+    overflow: scroll;
+  }
 }
 
 /* contact section starts */
