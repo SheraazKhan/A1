@@ -7,6 +7,15 @@ h1 {
     color: brown;
 
 }
+
+.card {
+  box-shadow: 1px 4px 8px 1px black; 
+  max-width: 275px;
+ 
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
 /* about section (image css) here */
 .heading {
   margin-left: 2rem;
