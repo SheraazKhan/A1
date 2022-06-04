@@ -1,3 +1,9 @@
+/* File Name: Assignment 1 COMP229
+   Student Name: Sheraaz Khan
+   StudentId:301166725
+   Date: 6/3/2022
+*/
+
 // installed third party packages
 
 let createError = require('http-errors');
