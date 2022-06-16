@@ -167,8 +167,8 @@ padding: 2px;}
 
 .bottom-left {font-style: bold; color: #033944; font-family: Times New Roman;}
 
-.btn {
-  color: red;
+.bottom-left.btn {
+  color: rgb(38, 16, 16);
 }
 
 @media screen and (max-width: 500px) {
