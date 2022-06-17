@@ -63,7 +63,7 @@ module.exports.displayEditPage = (req, res, next) => {
 module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id
     let updatedBook = Book({
-        "id": id,
+        "_id": id,
         "name": req.body.name,
         "author": req.body.author,
         "published": req.body.published,

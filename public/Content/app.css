@@ -381,10 +381,6 @@ form .button-area {
   left: 5px;
 }
 
-/* contact section starts 
-
-*/
-
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
